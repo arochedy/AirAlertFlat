@@ -2,11 +2,13 @@ var semaine=1;
 var jour=1;
 var min=2;
 var sec=0;
+var timer;
 /*On recupere ou on créer le tableau de prograssion et la liste des exos dans le local storage */
 
 
 //Ici on va changer les atributs de la page exos
 $( '#exo' ).on('pagebeforeshow', function(){
+clearTimeout(timer);
 //.bind("pageshow",function() 
 console.log("jour: "+ jour);
 console.log("semaine : "+semaine);
@@ -58,7 +60,7 @@ Si oui on met le lien "suivant" vers l''accueil et on sauvegarde la progression
 
 //Ici on va changer les atributs de la page exo2
 $( '#exo2' ).on("pagebeforeshow", function(event){
-
+clearTimeout(timer);
 
 	/*
 On verifie qu'on a pas fini la seance 
