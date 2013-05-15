@@ -1,0 +1,467 @@
+<html>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+<link rel="stylesheet" href="jquery.mobile-1.3.0.css" />
+<link rel="stylesheet" href="m-buttons.css" />
+<link rel="stylesheet" href="m-icons.css" />
+
+      
+		
+<style>
+#reglages .ui-icon { background:  url(img/reglages.png) 50% 50% no-repeat; background-size: 24px 22px; }
+@font-face {
+    font-family: "opensans";
+    src: url(OpenSans-Regular.ttf);
+    font-weight:400;
+}
+body {
+font-family: "opensans" !important;
+background-color : #E74C3C;
+color: white;
+}
+
+.bouton{
+
+/*background-color:#2C3E50;
+border-style:solid;
+border-width:1px;*/
+text-align : center;
+width:38%;
+height:35%;
+
+
+padding :3px;
+}
+#button1{
+position : absolute ;
+left: 5%;
+top :1%;
+
+
+}
+#button2{
+position : absolute ;
+left: 48%;
+top :1%;
+
+}
+#button3{
+position : absolute ;
+left: 5%;
+top :50%;
+
+}
+#button4{
+position : absolute ;
+left: 48%;
+top :50%;
+}
+
+#ligne1{
+width:100%;
+height:50%;
+
+}
+#ligne2{
+width:100%;
+height:50%;
+
+}
+.page{
+
+width:100%;
+height:100%;
+
+}
+.nb{
+ font-size: 150px; 
+}
+
+.contentExo{
+text-align:center;
+
+}
+</style>
+</head>
+
+<body>
+
+<div data-role="page" id="one">
+
+	
+		<div id="ligne1">
+			<div id="button1" class="bouton"><a href="#seance" class=" "   data-inline="true" > <img src="play.png">   </a></div>
+			<div id="button2" class="bouton"><a href="#exercices" class=" " data-inline="true"  > <img src="book.png">  </a></div>
+		</div>
+		<div id="ligne2">
+			<div id="button3" class="bouton"><a href="#info" class=" " data-inline="true"  > <img src="info.png">  </a></div>
+			<div id="button4" class="bouton"><a href="#reglages" class=" " data-inline="true"  > <img src="gear.png">  </a></div>
+		</div>
+	
+	
+	
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div><!-- /page one --><!-- Start of second page: #two -->
+
+
+
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Boîte de dialogue</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Popup</h2>
+		<p>J'ai un id "popup" sur mon conteneur de page et je ressemble à une boîte de dialogue, car le lien avait un attribut <code>data-rel="dialog"</code> qui me donne ce look et un attribut <code>data-transition="pop"</code> pour changer la transition en pop. Sans cela, je serais stylisé comme une page normale.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Retour à la page "Un"</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Pied de page</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<div data-role="page" id="seance">
+
+	
+
+	<div data-role="content" >	
+	
+		
+		<div id="listeExos">
+		
+		</div>
+		
+		<p>
+			
+			
+			<a href="#exo" class=" " data-inline="true"  > <img src="play.png">  </a>
+			<a href="#one" class=" " data-inline="true"  > <img src="undo.png">  </a>
+		</p>
+		<p>
+		
+		</p>
+	
+		
+	</div><!-- /content <p><a href="#two" data-role="button">Voir la page "Deux"</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Voir la page "popup" (comme une boîte de dialogue)</a></p>-->
+	
+	
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div><!-- /page one --><!-- Start of second page: #two -->
+
+<div data-role="page" id="exo">
+
+	<div class="contentExo">
+	
+	
+	
+		<h1 id="nomexo">Leap Ups</h1>
+		<span id="nbRep" class="nb" >20</span><h1>Reps</h1>
+		<div id="listeExos">
+		
+		</div>
+		
+		<p>
+			
+			<a href="#chrono" id="finStep" ><img src="check.png"></a>
+			<a href="#one"  ><img src="home.png"></a>
+		</p>
+		
+		</div>
+		
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div><!-- /page one --><!-- Start of second page: #two -->
+
+<div data-role="page" id="exo2">
+
+<div class="contentExo">
+
+	
+		<h1 id="nomexo2">Leap Ups</h1>
+	
+
+		<span id="nbRep2" class="nb">20</span>
+		<div id="listeExos2">
+		
+		</div>
+		
+		<p>
+			<a href="#chrono" id="finStep2" ><img src="check.png"></a>
+			<a href="#one"  ><img src="home.png"></a>
+		</p>
+		
+	</div>
+		
+
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div><!-- /page one --><!-- Start of second page: #two -->
+
+<div data-role="page" id="chrono">
+
+	
+	<div data-role="content" class="contentExo" >	
+
+		<h1>Repos</h1>
+		
+		
+		
+		<span id="nbMinutes" class="nb">2</span><span class="nb">:</span>
+		<span id="nbSecondes"  class="nb">00</span>
+		
+		<p>			
+			<a href="#exo" ><img src="next.png"></a>
+			<a href="#one" ><img src="home.png"></a>
+		</p>
+		
+	
+		
+	</div><!-- /content <p><a href="#two" data-role="button">Voir la page "Deux"</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Voir la page "popup" (comme une boîte de dialogue)</a></p>-->
+	
+	
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div>
+
+<div data-role="page" id="exercices">
+
+	<div data-role="header">
+		<h1 id="titrechrono">Exercices</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		
+		<a href="#one" class="m-btn red" data-role="button" data-inline="true" >Accueil</a>
+		
+		
+		
+		<div id="listeexos">
+		<h3>Les Leap Ups</h3>
+		<br/>
+		Tenez vous debout les pieds largeur des épaules.<br /><br />
+		<img SRC="img/leapUps.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		</br>		
+		<div>
+		
+		Sautez en regardant devant vous. Redescendez à plus ou moins ¼ de votre corps (vos jambes doivent êtres pliées à environ 45°) et ressautez. Ceci termine un Leapups.
+		</div>
+		<br />
+		
+		<h3>Les Calf Raises</h3>
+		<br/>
+		Tenez vous debout sur quelque chose de façon a ce que vos talons ne touche pas le sol (escalier, livre,…).<br /><br />
+		<img SRC="img/CalfRaises.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		</br>		
+		<div >
+		
+		Soulevez vous avec la pointe de vos pieds puis redescendez lentement. Faites une jambe puis l’autre.
+		</div>
+		<br />
+		
+		<h3>Les Step Ups</h3>
+		<br/>
+		Prenez une chaise et posez un pied dessus, sautez avec cette jambe et lorsque vous êtes en l’air 
+		changer de jambe : mettez votre jambe qui était sur le sol sur la chaise et celle sur la chaîse sur le sol.
+
+		<br /><br />
+		<img SRC="img/StepUps.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		<br/>		
+		<div>
+		
+		Faites le nombre de Reps indiqué pour chaque jambe.
+		</div>
+		<br />
+		
+		<h3>Les Thrust Ups</h3>
+		<br/>
+		Tenez vous debout avec vos pieds largeur des épaules, et ne pliez plus les genoux
+
+		<br /><br />
+		<img SRC="img/ThrustUps.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		<br/>		
+		<div>
+		
+		Sautez toujours sans pliez vos genoux
+		</div>
+		<br />
+		
+		<h3>Les Burnouts</h3>
+		<br/>
+		Tenez-vous debout (comme le Thrust-Ups).
+
+		Puis se mettre sur la pointe des pieds (le plus haut possible).
+
+		<br /><br />
+		<img SRC="img/Burnouts.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		<br/>		
+		<div>
+		
+		Ensuite, sautez le plus haut possible en utilisant seulement le bout de vos pieds.
+		</div>
+		<br />
+		
+		<h3>Le squat Hops</h3>
+		<br/>
+		Le hops aide considérablement à améliorer la résistance cardiovasculaire, le sprint et la vitesse du premier pas.</br>
+		Le hops est très éprouvant comme exercice et, pour cette raison, nous avons conçu l'exercice à accomplir seulement 1 
+		jour par semaine. </br> <b>Durant les semaines d’Air Alert III, 
+		vous devez seulement accomplir le hops le mercredi et aucun autre jour. </b>Si vous décidez de faire l'exercice plus de 1
+		fois par semaine, vous risquerez une extrême fatigue du muscle et le rétablissement du muscle sera faible sans parler
+		du risque de blessure. Le faible rétablissement du muscle vous mènera à moins de gains de cm.
+		</br>
+		Pour l'équilibre, vous aurez besoin d'un ballon de basket-ball que vous tiendrez dans vos bras. 
+		Pendant l'exercice, tenez le ballon contre votre torse et regardez droit devant.
+		Le hops est un exercice très simple à accomplir.
+		</br>	</br>	
+		Pour commencer l'exercice, 
+		accroupissez-vous simplement vers le bas dans une position reposante avec vos 
+		jambes pliées à un angle de 90 degrés. Vos cuisses doivent être parallèles au sol.
+		Vous serez dans une position reposante. Assurez-vous que votre dos est complètement
+		droit et que vous vous soutenez sur les pointes de vos pieds.
+		Pour exécuter l'exercice, maintenez la position reposante tout en saisissant la boule.
+		Regard droit devant et exécuter un petit bon (appeler hop/bounce) de 3-5 pouces.
+		Vos cuisses ne DOIVENT jamais quitter leur position parallèle. Un hop/bounce est considéré comme une répétition.
+
+		<br /><br />
+		<img SRC="img/SquatHops.jpg" WIDTH="210" HEIGHT="150" ALT="LeapUp">
+		<br/>		
+		<div>
+		
+		<b>A l'accomplissement (à la toute dernière répétition) de chaque ensemble, 
+		vous devez exploser dans l'air telle une fusée aussi haut que vous pouvez. </b>
+		Vous n’irez pas très haut mais se sera très efficace.
+		L’explosion est extrêmement importante. Vous verrez que vos cuisses 
+		seront légèrement plus dures et vous donnera 1-2 pouces additionnels. </br></br>
+		
+		
+		
+		1 : Pour l'équilibre, tenir un ballon de basket ou de volley-ball au niveau de la poitrine </br>
+		2 : Accroupissez vous dans une position assise tout en tenant le ballon, assurez vous que vous regardez droit devant,</br>
+		que vous avez le dos droit et que vous êtes sur la pointe des pieds. 
+		Enfin le plus important assurez vous que vos cuisses soient bien parallèles au sol </br>
+		3 : Sautez en position assise de 3 à 5 pouces ( 7 à 13 cm) en gardant bien 
+		vos cuisses parallèles, les pieds à terre termine la repétition.</br>
+		4 : Aprés chaque répétition vous retournez en position original (assise), 
+		et vous recommencer.</br>
+		5 : A la dernière reps, sautez le plus haut que vous pouvez (par exemple si vous devez faire 15 reps,
+		 vous effectuez 14 squat hops et sur la 15ème vous sautez le plus haut que vous pouvez).</br>
+		</div>
+		<br />
+		
+		</div>
+		
+		<p>
+			<a href="#one" class="m-btn red" data-role="button" data-inline="true" >Accueil</a>
+		</p>
+		<p>
+		
+		</p>
+	
+		
+	</div><!-- /content <p><a href="#two" data-role="button">Voir la page "Deux"</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Voir la page "popup" (comme une boîte de dialogue)</a></p>-->
+	
+	
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div>
+
+<div data-role="page" id="reglages">
+
+
+	<div data-role="header">
+		<h1>Reglages</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+	
+		
+		<a href="#reset" class="m-btn purple"  data-role="button"  data-corners="false"> <i class="m-icon-swapright m-icon-white"></i>  Choisir jour de départ  </a>
+		
+		<br />
+		
+		<a href="#one"                 class="m-btn red" data-role="button"  >Accueil</a>
+		
+		
+	
+		
+	</div><!-- /content <p><a href="#two" data-role="button">Voir la page "Deux"</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Voir la page "popup" (comme une boîte de dialogue)</a></p>-->
+	
+	
+	
+	<div data-role="footer" data-theme="d">
+		
+	</div><!-- /footer -->
+</div><!-- /page one --><!-- Start of second page: #two -->
+
+<div data-role="page" id="reset">
+
+	<div data-role="header" data-theme="e">
+		<h4>Choisir date</h4>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+	<p>
+	
+		Jour  
+		<select name="jour" id="jour"  data-role="none">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		Semaine
+		<select name="semaine" id="semaine"  data-role="none">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="8">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+		</select>
+	</p>
+		<a id="validerDate" href="#reglages" class="m-btn purple"  data-role="button" data-inline="true" data-corners="false"> <i class="m-icon-swapright m-icon-white"></i> Valider </a>	
+		<a href="#reglages" class="m-btn red"  data-role="button" data-inline="true" data-corners="false"> <i class="m-icon-swapright m-icon-white"></i> Annuler </a>
+	</div><!-- /content -->
+	
+	
+</div>
+
+
+<script src="jquery-1.9.1.min.js"></script> 
+<script src="jquery.mobile-1.3.0.min.js"></script>
+
+<script src="gestion.js"></script>
+<script src="phonegap.js"></script>
+		
+</body>
+
+
+</html>
